@@ -1,0 +1,195 @@
+body {
+  background-image: linear-gradient(white, skyblue, steelblue, darkslateblue) !important;
+  background-attachment: fixed;
+}
+body h1 {
+  font-size: 5rem;
+  text-align: center;
+  text-shadow: 4px -4px 2px #b63c3c;
+}
+body a {
+  text-decoration: none;
+}
+
+/*****nosotros*****/
+#nosotros {
+  padding-bottom: 2rem;
+  display: center;
+  justify-content: center;
+  align-items: center;
+}
+#nosotros .container .contenedor-nosotros {
+  border-radius: 2%;
+  padding: 1rem;
+  box-shadow: 0 15px 30px 10px rgba(67, 80, 98, 0.24), 0 2px 4px 0 rgba(67, 80, 98, 0.1);
+}
+#nosotros .container .contenedor-nosotros .titulo-nosotros h2 {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nosotros .container .contenedor-nosotros p {
+  color: black;
+}
+
+/*****Finnosotros*****/
+/*****header*****/
+.decoration {
+  color: black;
+  font-size: 2rem;
+  text-shadow: -1px -1px 2px #b63c3c;
+  font-weight: 500;
+}
+.decoration:hover {
+  background: rgba(255, 0, 0, 0.5);
+  color: white !important;
+  padding: 20px;
+  border-radius: 10%;
+  transition-duration: 1s;
+}
+
+/*****Finheader*****/
+/****Carrusel****/
+.carrusel {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/****FINCarrusel****/
+/*
+@keyframes display {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  10% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+
+.pic-ctn > img {
+  opacity: 0;
+  animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+*/
+/*******Trabajos******/
+#trabajos {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+#trabajos .titulo-trabajos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+#trabajos .cont-trab-1 {
+  box-shadow: 0 10px 30px 0 rgba(67, 80, 98, 0.24), 0 2px 4px 0 rgba(67, 80, 98, 0.1);
+  text-align: center;
+}
+
+/*****Fin Trabajos******/
+/******MI VIAJE********/
+#mi-viaje {
+  text-align: center;
+}
+#mi-viaje .contenedor-miviaje {
+  padding: 2rem 1rem 2rem 1rem;
+  box-shadow: 0 10px 30px 0 rgba(67, 80, 98, 0.24), 0 2px 4px 0 rgba(67, 80, 98, 0.1);
+}
+#mi-viaje .contenedor-miviaje .titulo-miviaje {
+  padding-bottom: 2rem;
+}
+#mi-viaje .contenedor-miviaje .contenedor-map {
+  padding-top: 1rem;
+}
+
+/*******FIN MIVIAJE*******/
+/*********contacto********/
+#contacto {
+  text-align: center;
+}
+#contacto .container-contacto {
+  box-shadow: 0 10px 30px 0 rgba(67, 80, 98, 0.24), 0 2px 4px 0 rgba(67, 80, 98, 0.1);
+}
+#contacto .container-contacto .container-titulocontacto {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+/*********Fincontacto********/
+/*************footer*************/
+footer {
+  text-decoration: none;
+  background-color: #7c7cdf;
+}
+footer .menu-footer {
+  padding: 40px;
+  text-decoration: none;
+}
+footer .menu-footer a {
+  text-decoration: none;
+}
+footer .menu-redes {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 30px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+footer .yt {
+  color: #c4302b;
+}
+footer .fb {
+  color: #3b5998;
+}
+footer .twi {
+  color: #00acee;
+}
+footer .flecha {
+  display: flex;
+  justify-content: center;
+  align-items: 0;
+}
+footer .flechacolor {
+  color: red;
+}
+footer .flechacolor:hover {
+  transform: scale(-2, 2);
+  transition: 2s;
+}
+
+/***********finfooter************/
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+
+@import "../prueba/variables";
+@import "../prueba/mixins";
+
+/*****nosotros*****/
+#nosotros{
+    padding-bottom: 2rem;
+    @include flex( center , center,center);
+    .container{
+        
+        .contenedor-nosotros{
+            border-radius: 2%;
+            padding: 1rem;
+            box-shadow: 0 15px 30px 10px rgba(67, 80, 98, 0.24), 0 2px 4px 0 rgba(67, 80, 98, 0.1);
+            .titulo-nosotros{
+                
+                h2{
+                    color:$colorletra;
+                    @include flex(flex ,center,center);
+                    
+                }
+            }
+            p{
+                color: $colorletra;
+                
+
+            }
+        }
+    }
+}
+
+/*****Finnosotros*****/
