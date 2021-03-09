@@ -26,16 +26,18 @@
 </head>
 
 <body>
-    <h1 id="up">MENSAJERIA</h1>
+    <h1 id="up" class="scale-up-center">MENSAJERIA</h1>
+    <span class="logo"><img src="images/motito2.png"></span>
+    
     <header>
         
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="container-fluid" >
               <!-- <a class="navbar-brand" href="#">Navb ar</a> -->
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon justify-content-center"></span>
               </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <div class="collapse navbar-collapse justify-content-end " id="navbarNav" style="padding-bottom: 2rem;">
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link decoration " aria-current="page" href="#nosotros">Nosotros</a>
@@ -57,33 +59,46 @@
       
     </header>
 
-        <section class="carrusel">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="covid.jpg"   width="600" height="400" >
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Protocolo covi19</h5>
-                        <p>Conozca nuestro nuevo protocolo contra el covid19.</p>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="24h.jpg"   width="600" height="400">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Atencion personalizada</h5>
-                        <p>Nuevo centro de atencion para cada necesidad las 24hs.</p>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="sobreentrega.jpg"  width="600" height="400" >
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Entrega certificada</h5>
-                        <p>Ahora podes ver en tiempo real quien y como reciben tu paquete.</p>
-                      </div>
-                  </div>
-                </div>
-                
-        </section>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/COVID.png" class="d-block w-100" >
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Protocolo covid-19</h5>
+              <p>Actualizamos nuestro protocolo para una mayor seguridad</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/moto.png" class="d-block w-100" >
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cadetes las 24h</h5>
+              <p>Con el mejor plantel para apoyarte en tu necesidad.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/deposito.png" class="d-block w-100" >
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Guardamos tus pertenencias</h5>
+              <p>De ahora en mas podes acceder a nuestro deposito para guardar lo que sea.</p>
+            </div>
+          </div>
+        </div>
+        <button class="barra-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="barra-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+        
     
             
             
@@ -112,45 +127,45 @@
             <section id="trabajos" class="bg-white">
                 <div class="container">
                     <div class="contenedortrabajos">
-                        <div class="titulo-trabajos">
+                        <div class="titulo-trabajos ">
                             <h2>Trabajos</h2>
                         </div>
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center ">
                             <div class="col-10 ">
                                 <div class="row ">
                                     <div class="col-4 cont-trab-1">
-                                        <div > <!--este cuadro tiene que tener un shadow gris-->
-                                            <div><img src="clock.png" ></div>
+                                        <div> <!-- cuadro -->
+                                            <div><img src="images/clock.png" ></div>
                                             <h4>Servicio Programado Ultrarápido</h4>
                                             <p>Puede programar su servicio para cualquier momento.</p>
                                         </div>
-                                        <div ><!--este cuadro tiene que tener un shadow gris-->
-                                            <div><img src="mail-send.png" ></div>
+                                        <div><!-- cuadro -->
+                                            <div><img src="images/mail-send.png" ></div>
                                             <h4>Mensajeria empresarial</h4>
                                             <p>Compromiso en todas sus gestiones.</p>
                                         </div>
                                     </div>
                                     <div class="col-4 cont-trab-1">
-                                        <div ><!--este cuadro tiene que tener un shadow gris-->
-                                            <div><img src="bank.png" ></div>   
+                                        <div><!-- cuadro -->
+                                            <div><img src="images/bank.png" ></div>   
                                             <h4>Tramites Bancarios y Aduaneros</h4>
                                             <p>Sus gestiones son mucho mas seguras y confidenciales.</p>
                                          </div>
-                                        <div ><!--este cuadro tiene que tener un shadow gris-->
-                                            <div><img src="giftbox.png" ></div>
+                                        <div><!-- cuadro -->
+                                            <div><img src="images/giftbox.png" ></div>
                                             <h4>Regalos Empresariales</h4>
                                             <p>Entregas durante todo el año.</p>
                                          </div>
                                          
                                     </div>
                                     <div class="col-4 cont-trab-1">
-                                        <div > <!--este cuadro tiene que tener un shadow gris-->
-                                            <div><img src="vip.png" ></div>
+                                        <div> <!-- cuadro -->
+                                            <div><img src="images/vip.png" ></div>
                                             <h4>Cadetes fijos</h4>
                                             <p>El personal EXCLUSIVO su empresa.</p>
                                         </div>
-                                        <div ><!--este cuadro tiene que tener un shadow gris-->
-                                            <div><img src="hand.png" ></div>
+                                        <div><!-- cuadro -->
+                                            <div><img src="images/hand.png" ></div>
                                             <h4>Cobranzas</h4>
                                             <p>Recibimos sus cobros con responsabilidad y eficacia</p>
                                         </div>
@@ -171,7 +186,9 @@
                 <div class="contenedor-miviaje">
                 <div class="titulo-miviaje">
                     <h3>Localizá en tiempo real tu entrega</h3>
+                    <span class="img-satelite"><img src="images/sateliteblack.png" ></span>
                 </div>
+                
  
                 <div class="contenedor-login">
                     <div>

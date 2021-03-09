@@ -10,7 +10,17 @@
     
 
     .titulo-miviaje{
+        display: flex;
+        justify-content: center;
         padding-bottom: 2rem;
+        .img-satelite{
+            position: absolute;
+            z-index: -1;
+            right: 35%;
+            animation: 4s satelite infinite;
+            
+            
+        }
     }
 
     .contenedor-map{

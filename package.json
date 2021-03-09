@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MauShark/nuevo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MauShark/nuevo/issues"
+  },
+  "homepage": "https://github.com/MauShark/nuevo#readme",
   "description": ""
 }

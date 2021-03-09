@@ -3,9 +3,23 @@ body {
   background-attachment: fixed;
 }
 body h1 {
+  letter-spacing: 2px;
+  color: white;
   font-size: 5rem;
   text-align: center;
-  text-shadow: 4px -4px 2px #b63c3c;
+  text-shadow: 4px -4px 10px black;
+}
+body .scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+body .logo {
+  padding: 20px;
+  top: 20px;
+  z-index: -1;
+  position: absolute;
+  transform: scale(2.2);
+  padding-left: 31%;
 }
 body a {
   text-decoration: none;
@@ -38,70 +52,68 @@ body a {
 .decoration {
   color: black;
   font-size: 2rem;
-  text-shadow: -1px -1px 2px #b63c3c;
+  text-shadow: -1px -1px 2px black;
   font-weight: 500;
 }
 .decoration:hover {
-  background: rgba(255, 0, 0, 0.5);
   color: white !important;
-  padding: 20px;
+  transform: scale(1.3);
   border-radius: 10%;
   transition-duration: 1s;
 }
 
 /*****Finheader*****/
 /****Carrusel****/
-.carrusel {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+#carouselExampleCaptions .carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+#carouselExampleCaptions .carousel-indicators button {
+  width: 30px;
+  background-color: #fff;
+  border-width: 2px;
+  border-style: outset;
+  border-color: transparent #fff;
+}
+#carouselExampleCaptions .barra-next {
+  right: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+#carouselExampleCaptions .barra-prev {
+  left: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
 }
 
 /****FINCarrusel****/
-/*
-@keyframes display {
-  0% {
-    -webkit-transform: translateX(50px);
-    transform: translateX(50px);
-    opacity: 0;
-  }
-  10% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-  20% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-  30% {
-    -webkit-transform: translateX(-200px);
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(-200px);
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-}
-
-
-.pic-ctn > img {
-  opacity: 0;
-  animation: display 10s infinite;
-}
-
-img:nth-child(2) {
-  animation-delay: 2s;
-}
-img:nth-child(3) {
-  animation-delay: 4s;
-}
-*/
 /*******Trabajos******/
 #trabajos {
   padding-top: 1rem;
@@ -128,7 +140,15 @@ img:nth-child(3) {
   box-shadow: 0 10px 30px 0 rgba(67, 80, 98, 0.24), 0 2px 4px 0 rgba(67, 80, 98, 0.1);
 }
 #mi-viaje .contenedor-miviaje .titulo-miviaje {
+  display: flex;
+  justify-content: center;
   padding-bottom: 2rem;
+}
+#mi-viaje .contenedor-miviaje .titulo-miviaje .img-satelite {
+  position: absolute;
+  z-index: -1;
+  right: 35%;
+  animation: 4s satelite infinite;
 }
 #mi-viaje .contenedor-miviaje .contenedor-map {
   padding-top: 1rem;
@@ -151,7 +171,7 @@ img:nth-child(3) {
 /*************footer*************/
 footer {
   text-decoration: none;
-  background-color: #7c7cdf;
+  background-color: darkslateblue;
 }
 footer .menu-footer {
   padding: 40px;
@@ -191,5 +211,155 @@ footer .flechacolor:hover {
 }
 
 /***********finfooter************/
+/*******************MEDIAQ****************************/
+@media screen and (min-width: 1281px) {
+  .titulo-miviaje .img-satelite {
+    padding-top: 2rem;
+    right: 30% !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+  iframe {
+    width: auto;
+    height: auto;
+  }
+
+  .titulo-miviaje .img-satelite {
+    padding-top: 2rem;
+    right: 30% !important;
+  }
+}
+@media screen and (max-width: 990px) {
+  .decoration:hover {
+    transform: none;
+  }
+
+  iframe {
+    width: auto;
+    height: auto;
+  }
+
+  .titulo-miviaje .img-satelite {
+    padding-top: 2rem;
+    right: 29% !important;
+  }
+}
+@media screen and (max-width: 760px) {
+  .decoration:hover {
+    transform: none;
+  }
+
+  iframe {
+    width: auto;
+    height: auto;
+  }
+
+  .titulo-miviaje .img-satelite {
+    padding-top: 2rem;
+    right: 20% !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  body h1 {
+    font-size: 5rem;
+  }
+
+  .decoration:hover {
+    transform: none;
+  }
+
+  iframe {
+    width: auto;
+    height: auto;
+  }
+
+  .titulo-miviaje .img-satelite {
+    padding-top: 2rem;
+    right: 10% !important;
+  }
+}
+@media screen and (max-width: 485px) {
+  body h1 {
+    font-size: 4rem;
+  }
+
+  .decoration:hover {
+    transform: none;
+  }
+
+  #trabajos .cont-trab-1 {
+    padding: 20px 20px;
+    width: 100%;
+  }
+
+  iframe {
+    width: auto;
+    height: auto;
+  }
+
+  .titulo-miviaje .img-satelite {
+    padding-top: 2rem;
+    right: 10% !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  body h1 {
+    font-size: 3rem;
+  }
+
+  .decoration:hover {
+    transform: none;
+  }
+
+  iframe {
+    width: auto;
+    height: auto;
+  }
+
+  .titulo-miviaje .img-satelite {
+    padding-top: 2rem;
+    right: 10% !important;
+  }
+}
+/*******************MEDIAQ****************************/
+/********keyframes*******/
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes satelite {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+    transition: 1s ease-in;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+    transition: 1s;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+    transition: ease-out;
+  }
+}
+/********Finkeyframes*******/
 
 /*# sourceMappingURL=style.css.map */
