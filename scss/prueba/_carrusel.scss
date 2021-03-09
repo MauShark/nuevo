@@ -3,8 +3,8 @@
 /****Carrusel****/
 
 #carouselExampleCaptions{
-
-.carousel-indicators{
+  
+  .carousel-indicators{
   position: absolute;
   right: 0;
   bottom: 0;
@@ -26,22 +26,22 @@
     
   }
 
-}
+  }
 
-.barra-next{
-  right: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  @include flex (flex ,center ,center);
-  color: #fff;
-  text-align: center;
-  opacity: .5;
-  transition: opacity .15s ease;
-}
+  .barra-next{
+    right: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+   @include flex (flex ,center ,center);
+    color: #fff;
+   text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+  }
 
-.barra-prev{
+  .barra-prev{
   left: 0;
   position: absolute;
   top: 0;

@@ -3,11 +3,13 @@
 /*******************MEDIAQ****************************/
 @media screen and (min-width: 1281px){
 
-    
+    #carouselExampleCaptions{
+        width: 50%;
+        left: 25%;
     
 
     
-    
+    }
     .titulo-miviaje{
         
         .img-satelite{
@@ -85,7 +87,8 @@
 }
 
 @media screen and (max-width: 760px){
-
+    
+    
     .decoration:hover{
         transform: none;
         

@@ -214,6 +214,11 @@ footer .flechacolor:hover {
 /***********finfooter************/
 /*******************MEDIAQ****************************/
 @media screen and (min-width: 1281px) {
+  #carouselExampleCaptions {
+    width: 50%;
+    left: 25%;
+  }
+
   .titulo-miviaje .img-satelite {
     padding-top: 2rem;
     right: 30% !important;
