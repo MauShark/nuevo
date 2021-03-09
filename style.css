@@ -172,6 +172,7 @@ body a {
 footer {
   text-decoration: none;
   background-color: darkslateblue;
+  color: white;
 }
 footer .menu-footer {
   padding: 40px;
