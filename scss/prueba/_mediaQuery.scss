@@ -30,7 +30,13 @@
 
 @media screen and (max-width: 1280px){
 
+    #carouselExampleCaptions{
+        width: 62%;
+        left: 19%;
     
+
+    
+    }
     
 
     iframe{
@@ -128,6 +134,12 @@
     .decoration:hover{
         transform: none;
         
+    }
+    #trabajos{
+        .cont-trab-1{
+            padding: 20px 20px;
+            width: 100% ;
+        }
     }
 
     iframe{

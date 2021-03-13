@@ -57,9 +57,8 @@ body a {
 }
 .decoration:hover {
   color: white !important;
-  transform: scale(1.3);
-  border-radius: 10%;
-  transition-duration: 1s;
+  animation: pulse infinite;
+  animation-duration: 2s;
 }
 
 /*****Finheader*****/
@@ -171,7 +170,7 @@ body a {
 /*************footer*************/
 footer {
   text-decoration: none;
-  background-color: darkslateblue;
+  background-color: #343a40;
   color: white;
 }
 footer .menu-footer {
@@ -225,6 +224,11 @@ footer .flechacolor:hover {
   }
 }
 @media screen and (max-width: 1280px) {
+  #carouselExampleCaptions {
+    width: 62%;
+    left: 19%;
+  }
+
   iframe {
     width: auto;
     height: auto;
@@ -272,6 +276,11 @@ footer .flechacolor:hover {
 
   .decoration:hover {
     transform: none;
+  }
+
+  #trabajos .cont-trab-1 {
+    padding: 20px 20px;
+    width: 100%;
   }
 
   iframe {
